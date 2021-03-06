@@ -20,7 +20,7 @@ byte temperature = 0;                                // Declaring a byte called 
 byte humidity = 0;                                   // Declaring a byte called humidity and Initializing a value to it.
 int err;                                             // Declaring err as an integer.
 sensorValue = analogRead(sensorPin);                 // Reading analog values from soil moisture sensor and storing it to sensorValue.
-percentvalue = map(sensorValue, 1023, 200, 0, 100);  // Mapping sensorValue between 1023 and 200 to 0 to 200. 
+percentvalue = map(sensorValue, 1023, 200, 0, 100);  // Mapping sensorValue between 1023 and 200 to 0 to 100. 
 
 
 err = dht11.read(&temperature, &humidity, NULL);  // Reading the DHT-1 sensor values.
